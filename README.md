@@ -1,27 +1,96 @@
-# UnitConverterApp
+# Unit Converter App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+A simple unit converter application built with Angular and styled using Tailwind CSS. The app allows users to convert between different units of length, including meters, kilometers, centimeters, and millimeters.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Convert between meters, kilometers, centimeters, and millimeters.
+- Responsive design using Tailwind CSS.
+- User-friendly interface for quick unit conversions.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone the repository:**
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/manthanank/unit-converter-app.git
+   cd unit-converter-app
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Install dependencies:**
 
-## Running end-to-end tests
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Set up Tailwind CSS:**
 
-## Further help
+   Tailwind CSS is already configured in the project. To ensure it is working correctly, Tailwind directives are included in `src/styles.scss`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4. **Run the application:**
+
+   ```bash
+   ng serve
+   ```
+
+   Navigate to `http://localhost:4200/` in your browser.
+
+## Usage
+
+Once the application is running, you can:
+
+- Input a value to convert.
+- Select the "From" and "To" units using the dropdown menus.
+- Click the **Convert** button to see the result.
+- To reset the conversion, click the **Reset** button.
+- Swap the "From" and "To" units using the **Swap** button.
+- The result will be displayed below the input fields.
+- The app is responsive and works on both desktop and mobile devices.
+
+## Project Structure
+
+```plaintext
+unit-converter-app/
+│
+├── src/
+│   ├── app/
+│   │   ├── app.component.html
+│   │   ├── app.component.ts
+│   │   ├── app.component.scss
+│   │   ├── app.config.ts
+│   │   ├── app.routes.ts
+│   ├── styles.scss
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   └── ...
+├── tailwind.config.js
+├── angular.json
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+## Technologies Used
+
+- **Angular**: Frontend framework for building the app.
+- **Tailwind CSS**: Utility-first CSS framework for styling the app.
+- **TypeScript**: Strongly-typed JavaScript used in Angular.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request or open an issue.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
